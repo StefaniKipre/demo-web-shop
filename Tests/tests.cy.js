@@ -16,11 +16,11 @@ describe('Smoke Testing Test Cases for Demowebshop', () => {
 
 
     registerPage.RregisterBtn()
-    registerPage.enterFirstname('Tef')
+    registerPage.enterFirstname('Stefani')
     registerPage.enterLastname('Kip')
-    registerPage.enterEmail('mej10@mail.com')
-    registerPage.enterPassword('passw123')
-    registerPage.enterConfirmPassword('passw123')
+    registerPage.enterEmail('stefani@mail.com')
+    registerPage.enterPassword('pass123')
+    registerPage.enterConfirmPassword('pass123')
     registerPage.clickRegisterButton()
     registerPage.checkSuccessRegister()
   })
@@ -29,8 +29,8 @@ describe('Smoke Testing Test Cases for Demowebshop', () => {
 
 
     loginPage.OpenLogin()
-    loginPage.enterEmail('mej10@mail.com')
-    loginPage.enterPassword('passw123')
+    loginPage.enterEmail('stefani@mail.com')
+    loginPage.enterPassword('pass123')
     loginPage.clickLoginButton()
     loginPage.elements.welcomeMsg().should('have.text', 'Welcome to the new Tricentis store!')
     loginPage.elements.verifyLoginSuccessfully().should('contain.text', 'Log out')
@@ -48,8 +48,8 @@ describe('Smoke Testing Test Cases for Demowebshop', () => {
 
 
     loginPage.OpenLogin()
-    loginPage.enterEmail('mej10@mail.com')
-    loginPage.enterPassword('passw123')
+    loginPage.enterEmail('stefani@mail.com')
+    loginPage.enterPassword('pass123')
     loginPage.clickLoginButton()
     checkout.addLaptop()
     checkout.goToCart()
@@ -75,8 +75,8 @@ describe('Smoke Testing Test Cases for Demowebshop', () => {
 
 
     contact.contactUsBtn()
-    contact.Name('Tef')
-    contact.Email('mej10@mail.com')
+    contact.Name('Stefani')
+    contact.Email('stefani@mail.com')
     contact.Enquiry('This is a test message')
     contact.Submit()
   })
@@ -113,8 +113,8 @@ describe('Smoke Testing Test Cases for Demowebshop', () => {
 
 
     loginPage.OpenLogin()
-    loginPage.enterEmail('mej10@mail.com')
-    loginPage.enterPassword('passw123')
+    loginPage.enterEmail('stefani@mail.com')
+    loginPage.enterPassword('pass123')
     loginPage.clickLoginButton()
     wishlist.OpenGiftCard()
     wishlist.RecipientNameInput('Stefi')
@@ -128,8 +128,8 @@ describe('Smoke Testing Test Cases for Demowebshop', () => {
 
 
     loginPage.OpenLogin()
-    loginPage.enterEmail('mej9@mail.com')
-    loginPage.enterPassword('passw123')
+    loginPage.enterEmail('stefani@mail.com')
+    loginPage.enterPassword('pass123')
     loginPage.clickLoginButton()
     checkout.addLaptop()
     checkout.goToCart()
